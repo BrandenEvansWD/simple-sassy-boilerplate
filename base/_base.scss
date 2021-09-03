@@ -1,0 +1,19 @@
+// This file contains all of your basic styles.
+@use "abstracts/variables";
+
+// Set up box sizing on the root and set to inherit.
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+// Link styling
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}

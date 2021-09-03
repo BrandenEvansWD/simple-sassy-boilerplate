@@ -1,0 +1,21 @@
+{
+  "name": "-",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass sass/style.scss css/style.comp.css",
+    "compile-watch": "sass sass/style.scss css/style.comp.css --watch",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress": "sass css/style.prefix.css css/style.css --output-style compressed",
+    "delete": "del-cli css/style.comp.css css/style.comp.css.map css/style.prefix.css",
+    "all": "npm-run-all compile prefix compress delete"
+  },
+  "author": "Branden Evans",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.38.2"
+  }
+}
