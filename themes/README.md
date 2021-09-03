@@ -1,6 +1,3 @@
 # Themes
 
-On large sites and applications, it is not unusual to have different themes. There are certainly different ways of dealing with themes but I personally like having them all in a themes/ folder.
-
-_theme.scss
-_admin.scss
+It can be common to have multiple themes for a website, whether a dark and light mode, or seasonal changes. Depending on the project you may not use any but the default theme so this entire folder can be deleted if not in use.
