@@ -4,11 +4,11 @@
   "description": "-",
   "main": "index.js",
   "scripts": {
-    "compile": "sass sass/style.scss css/style.comp.css",
-    "compile-watch": "sass sass/style.scss css/style.comp.css --watch",
-    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
-    "compress": "sass css/style.prefix.css css/style.css --output-style compressed",
-    "delete": "del-cli css/style.comp.css css/style.comp.css.map css/style.prefix.css",
+    "compile": "sass main.scss style.comp.css",
+    "compile-watch": "sass main.scss style.comp.css --watch",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" style.comp.css -o style.prefix.css",
+    "compress": "sass style.prefix.css style.css --style compressed",
+    "delete": "del-cli style.comp.css style.comp.css.map style.prefix.css",
     "all": "npm-run-all compile prefix compress delete"
   },
   "author": "Branden Evans",
