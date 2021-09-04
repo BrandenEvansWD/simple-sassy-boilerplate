@@ -8,7 +8,7 @@
     "compile-watch": "sass main.scss style.comp.css --watch",
     "prefix": "postcss --use autoprefixer -b \"last 10 versions\" style.comp.css -o style.prefix.css",
     "compress": "sass style.prefix.css style.css --style compressed",
-    "delete": "del-cli style.comp.css style.comp.css.map style.prefix.css",
+    "delete": "del-cli style.comp.css style.comp.css.map style.prefix.css style.css.map",
     "all": "npm-run-all compile prefix compress delete"
   },
   "author": "Branden Evans",

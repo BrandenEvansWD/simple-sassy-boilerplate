@@ -1,38 +1,3 @@
-@use "abstracts/variables";
+@use "../abstracts/variables";
 
 // Typography styles for body text
-
-body {
-  color: $font-color-copy;
-  font-family: 'Lexend Deca', sans-serif;
-  font-size: 15px;
-}
-
-h1 {
-  color: $font-color-header;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-}
-
-.stats {
-  color: $font-color-header;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-
-
-  &__heading {
-    color: $font-color-stats;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-}
-
-.attribution { 
-  font-size: 11px; 
-  text-align: center; 
-  
-    &a { 
-      color: hsl(228, 45%, 44%); 
-    } 
-  }
